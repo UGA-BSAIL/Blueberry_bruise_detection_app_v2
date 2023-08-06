@@ -23,8 +23,8 @@ const modelName = "yolov8n-seg.onnx";
 const modelInputShape = [1, 3, 640, 640];
 const topk = 100;
 const iouThreshold = 0.2;
-const confThreshold = 0.7    ;
-const classThreshold = 0.7;
+const confThreshold = 0.85    ;
+const classThreshold = 0.85;
 
 // wait until opencv.js initialized
 cv["onRuntimeInitialized"] = async () => {
